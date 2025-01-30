@@ -4,7 +4,7 @@ import 'package:full_testing_flutter/counter.dart';
 
 void main() {
   group('[Counter]', () {
-    Counter _counter;
+    late Counter _counter;
 
     setUp(() {
       _counter = Counter();
