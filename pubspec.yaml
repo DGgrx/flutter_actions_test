@@ -19,6 +19,7 @@ dependencies:
   provider: ^6.1.2
 
 dev_dependencies:
+  test:
   flutter_test:
     sdk: flutter
   flutter_driver:
