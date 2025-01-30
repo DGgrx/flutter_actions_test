@@ -14,9 +14,9 @@ void main() {
       expect(_counter.value, 0);
     });
 
-    // test('Counter class type should be `Counter`', () {
-    //   expect(_counter.runtimeType, equals(Counter));
-    // });
+    test('Counter class type should be `Counter`', () {
+      expect(_counter.runtimeType, equals(Counter));
+    });
 
     test('Counter value type should be `int`', () {
       expect(_counter.value.runtimeType, equals(int));
