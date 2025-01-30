@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-01-30" filename="main.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="0.96153843" lines-covered="25" lines-valid="26" package="lib" testname="lcov.info" version="1.6">
+    <lines>
+        <line number="1">
+            <code>import 'package:flutter/material.dart';</code>
+        </line>
+        <line number="2">
+            <code>import 'package:provider/provider.dart';</code>
+        </line>
+        <line number="3">
+            <code>import 'package:full_testing_flutter/counter.dart';</code>
+        </line>
+        <line number="4">
+            <code/>
+        </line>
+        <line hits="0" number="5">
+            <code>void main() =&gt; runApp(MyApp());</code>
+        </line>
+        <line number="6">
+            <code/>
+        </line>
+        <line number="7">
+            <code>class MyApp extends StatelessWidget {</code>
+        </line>
+        <line number="8">
+            <code>  // This widget is the root of your application.</code>
+        </line>
+        <line hits="2" number="9">
+            <code>  @override</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="10">
+            <code>  Widget build(BuildContext context) {</code>
+        </line>
+        <line number="11">
+            <code>    // Provide the model to all widgets within the app. We're using</code>
+        </line>
+        <line number="12">
+            <code>    // ChangeNotifierProvider because that's a simple way to rebuild</code>
+        </line>
+        <line number="13">
+            <code>    // widgets when a model changes. We could also just use</code>
+        </line>
+        <line number="14">
+            <code>    // Provider, but then we would have to listen to Counter ourselves.</code>
+        </line>
+        <line number="15">
+            <code>    //</code>
+        </line>
+        <line number="16">
+            <code>    // Read Provider's docs to learn about all the available providers.</code>
+        </line>
+        <line hits="2" number="17">
+            <code>    return ChangeNotifierProvider(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="18">
+            <code>      // Initialize the model in the builder. That way, Provider</code>
+        </line>
+        <line number="19">
+            <code>      // can own Counter's lifecycle, making sure to call `dispose`</code>
+        </line>
+        <line number="20">
+            <code>      // when not needed anymore.</code>
+        </line>
+        <line hits="4" number="21">
+            <code>      create: (context) =&gt; Counter(),</code>
+            <hit count="4" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="22">
+            <code>      child: MaterialApp(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="23">
+            <code>        title: 'Flutter Demo',</code>
+        </line>
+        <line hits="2" number="24">
+            <code>        theme: ThemeData(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="25">
+            <code>          primarySwatch: Colors.blue,</code>
+        </line>
+        <line number="26">
+            <code>        ),</code>
+        </line>
+        <line hits="2" number="27">
+            <code>        home: MyHomePage(title: 'Flutter Demo Home Page'),</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="28">
+            <code>      ),</code>
+        </line>
+        <line number="29">
+            <code>    );</code>
+        </line>
+        <line number="30">
+            <code>  }</code>
+        </line>
+        <line number="31">
+            <code>}</code>
+        </line>
+        <line number="32">
+            <code/>
+        </line>
+        <line number="33">
+            <code>class MyHomePage extends StatelessWidget {</code>
+        </line>
+        <line number="34">
+            <code>  final String title;</code>
+        </line>
+        <line number="35">
+            <code/>
+        </line>
+        <line hits="2" number="36">
+            <code>  MyHomePage({this.title});</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="37">
+            <code/>
+        </line>
+        <line hits="2" number="38">
+            <code>  @override</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="39">
+            <code>  Widget build(BuildContext context) {</code>
+        </line>
+        <line hits="2" number="40">
+            <code>    return Scaffold(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="41">
+            <code>      appBar: AppBar(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="4" number="42">
+            <code>        title: Text(title),</code>
+            <hit count="4" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="43">
+            <code>      ),</code>
+        </line>
+        <line hits="2" number="44">
+            <code>      body: Center(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="45">
+            <code>        child: Column(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="46">
+            <code>          mainAxisAlignment: MainAxisAlignment.center,</code>
+        </line>
+        <line hits="2" number="47">
+            <code>          children: &lt;Widget&gt;[</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="48">
+            <code>            Text(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="49">
+            <code>              'You have pushed the button this many times:',</code>
+        </line>
+        <line number="50">
+            <code>            ),</code>
+        </line>
+        <line number="51">
+            <code>            // Consumer looks for an ancestor Provider widget</code>
+        </line>
+        <line number="52">
+            <code>            // and retrieves its model (Counter, in this case).</code>
+        </line>
+        <line number="53">
+            <code>            // Then it uses that model to build widgets, and will trigger</code>
+        </line>
+        <line number="54">
+            <code>            // rebuilds if the model is updated.</code>
+        </line>
+        <line hits="2" number="55">
+            <code>            Consumer&lt;Counter&gt;(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="4" number="56">
+            <code>              builder: (context, counter, child) =&gt; Text(</code>
+            <hit count="4" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="4" number="57">
+            <code>                '${counter.value}',</code>
+            <hit count="4" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="58">
+            <code>                key: Key('counter'),</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="6" number="59">
+            <code>                style: Theme.of(context).textTheme.display1,</code>
+            <hit count="6" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="60">
+            <code>              ),</code>
+        </line>
+        <line number="61">
+            <code>            ),</code>
+        </line>
+        <line number="62">
+            <code>          ],</code>
+        </line>
+        <line number="63">
+            <code>        ),</code>
+        </line>
+        <line number="64">
+            <code>      ),</code>
+        </line>
+        <line hits="2" number="65">
+            <code>      floatingActionButton: FloatingActionButton(</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="66">
+            <code>        // Provider.of is another way to access the model object held</code>
+        </line>
+        <line number="67">
+            <code>        // by an ancestor Provider. By default, even this listens to</code>
+        </line>
+        <line number="68">
+            <code>        // changes in the model, and rebuilds the whole encompassing widget</code>
+        </line>
+        <line number="69">
+            <code>        // when notified.</code>
+        </line>
+        <line number="70">
+            <code>        //</code>
+        </line>
+        <line number="71">
+            <code>        // By using `listen: false` below, we are disabling that</code>
+        </line>
+        <line number="72">
+            <code>        // behavior. We are only calling a function here, and so we don't care</code>
+        </line>
+        <line number="73">
+            <code>        // about the current value. Without `listen: false`, we'd be rebuilding</code>
+        </line>
+        <line number="74">
+            <code>        // the whole MyHomePage whenever Counter notifies listeners.</code>
+        </line>
+        <line hits="2" number="75">
+            <code>        key: Key('increment'),</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="1" number="76">
+            <code>        onPressed: () =&gt;</code>
+            <hit count="1" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="2" number="77">
+            <code>            Provider.of&lt;Counter&gt;(context, listen: false).increment(),</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="78">
+            <code>        tooltip: 'Increment',</code>
+        </line>
+        <line hits="2" number="79">
+            <code>        child: Icon(Icons.add),</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="80">
+            <code>      ),</code>
+        </line>
+        <line number="81">
+            <code>    );</code>
+        </line>
+        <line number="82">
+            <code>  }</code>
+        </line>
+        <line number="83">
+            <code>}</code>
+        </line>
+    </lines>
+    <config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+    <base href="../"/>
+    <base href="../"/>
+</coverage>

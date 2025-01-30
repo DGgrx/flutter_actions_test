@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../jgenhtml.xsl"?><coverage branch-rate="NaN" branches-covered="0" branches-valid="0" complexity="0" date="2025-01-30" filename="counter.dart" function-rate="NaN" functions-covered="0" functions-valid="0" line-rate="1.0" lines-covered="6" lines-valid="6" package="lib" testname="lcov.info" version="1.6">
+    <lines>
+        <line number="1">
+            <code>import 'package:flutter/foundation.dart';</code>
+        </line>
+        <line number="2">
+            <code/>
+        </line>
+        <line number="3">
+            <code>/// Simplest possible model, with just one field.</code>
+        </line>
+        <line number="4">
+            <code>///</code>
+        </line>
+        <line number="5">
+            <code>/// [ChangeNotifier] is a class in `flutter:foundation`.</code>
+        </line>
+        <line number="6">
+            <code>/// [Counter] does _not_ depend on Provider.</code>
+        </line>
+        <line number="7">
+            <code>class Counter with ChangeNotifier {</code>
+        </line>
+        <line number="8">
+            <code>  int value = 0;</code>
+        </line>
+        <line number="9">
+            <code/>
+        </line>
+        <line hits="3" number="10">
+            <code>  void increment() {</code>
+            <hit count="3" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="6" number="11">
+            <code>    value++;</code>
+            <hit count="6" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="12">
+            <code>    // print('Value++: $value');</code>
+        </line>
+        <line hits="3" number="13">
+            <code>    notifyListeners();</code>
+            <hit count="3" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="14">
+            <code>  }</code>
+        </line>
+        <line number="15">
+            <code/>
+        </line>
+        <line hits="2" number="16">
+            <code>  void decrement() {</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line hits="4" number="17">
+            <code>    value--;</code>
+            <hit count="4" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="18">
+            <code>    // print('Value--: $value');</code>
+        </line>
+        <line hits="2" number="19">
+            <code>    notifyListeners();</code>
+            <hit count="2" name="&lt;unnamed&gt;"/>
+        </line>
+        <line number="20">
+            <code>  }</code>
+        </line>
+        <line number="21">
+            <code>}</code>
+        </line>
+    </lines>
+    <config branch-coverage="true" description-file="false" function-coverage="true" genhtml_hi_limit="90" genhtml_med_limit="75" legend="false" no-sort="false" no-source="false" show-details="false"/>
+    <base href="../"/>
+    <base href="../"/>
+</coverage>
