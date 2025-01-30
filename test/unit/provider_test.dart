@@ -9,7 +9,7 @@ void main() async {
   group('[Provider]', () {
     testWidgets('Update when the value changes', (tester) async {
       final _providerKey = GlobalKey();
-      BuildContext context;
+      late BuildContext context;
 
       await tester.pumpWidget(ChangeNotifierProvider<Counter>(
         key: _providerKey,
