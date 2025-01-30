@@ -4,10 +4,12 @@
 # Generate coverage report
 # flutter test --coverage --no-pub
 
-test
+chmod +x ./scripts/test.sh
+
+./scripts/test.sh
 
 # Define files
-NEW_LCOV="coverage/lcov.info"
+NEW_LCOV="./coverage/lcov.info"
 OLD_LCOV="old_lcov.info"
 
 # Check if old lcov.info exists
