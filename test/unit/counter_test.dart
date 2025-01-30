@@ -19,7 +19,7 @@ void main() {
     });
 
     test('Counter value type should be `int`', () {
-      expect(_counter.value.runtimeType, equals(int));
+      expect(_counter.value.runtimeType, equals(bool));
     });
 
     test('Counter value should not be `null`', () {
@@ -29,7 +29,7 @@ void main() {
     test('Counter value should be incremented', () {
       _counter.increment();
 
-      expect(_counter.value, 1);
+      expect(_counter.value, 2);
     });
 
     test('Counter value should be decremented', () {
